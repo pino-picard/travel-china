@@ -4,6 +4,13 @@ export const enSidebar = sidebar({
   "/": [
     "",
     {
+      text: "A detailed travel guide",
+      icon: "face-smile",
+      prefix: "step-guide/",
+      link: "step-guide/",
+      children: "structure",
+    },
+    {
       text: "Demo",
       icon: "laptop-code",
       prefix: "demo/",

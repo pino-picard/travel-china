@@ -6,7 +6,7 @@ export default hopeTheme({
   hostname: "https://vuepress-theme-hope-docs-demo.netlify.app",
 
   author: {
-    name: "Mr.Pino",
+    name: "Pino",
     url: "",
     email: "caoxiao3158@hotmail.com"
   },
@@ -17,7 +17,11 @@ export default hopeTheme({
 
   favicon: "logo.svg",
 
-  repo: "vuepress-theme-hope/vuepress-theme-hope",
+  print: true,
+
+  fullscreen: false,
+
+  repo: "pino-picard/travel-china",
 
   docsDir: "src",
 
@@ -31,7 +35,7 @@ export default hopeTheme({
 
       footer: "Default footer",
 
-      displayFooter: true,
+      displayFooter: false,
 
       metaLocales: {
         editLink: "Edit this page on GitHub",
@@ -41,22 +45,22 @@ export default hopeTheme({
     /**
      * Chinese locale config
      */
-    "/zh/": {
-      // navbar
-      navbar: zhNavbar,
-
-      // sidebar
-      sidebar: zhSidebar,
-
-      footer: "默认页脚",
-
-      displayFooter: true,
-
-      // page meta
-      metaLocales: {
-        editLink: "在 GitHub 上编辑此页",
-      },
-    },
+    // "/zh/": {
+    //   // navbar
+    //   navbar: zhNavbar,
+    //
+    //   // sidebar
+    //   sidebar: zhSidebar,
+    //
+    //   footer: "默认页脚",
+    //
+    //   displayFooter: false,
+    //
+    //   // page meta
+    //   metaLocales: {
+    //     editLink: "在 GitHub 上编辑此页",
+    //   },
+    // },
   },
 
   encrypt: {
@@ -69,13 +73,15 @@ export default hopeTheme({
   plugins: {
     // Note: This is for testing ONLY!
     // You MUST generate and use your own comment service in production.
-    comment: {
-      provider: "Giscus",
-      repo: "vuepress-theme-hope/giscus-discussions",
-      repoId: "R_kgDOG_Pt2A",
-      category: "Announcements",
-      categoryId: "DIC_kwDOG_Pt2M4COD69",
-    },
+    // comment: {
+    //   provider: "Giscus",
+    //   repo: "vuepress-theme-hope/giscus-discussions",
+    //   repoId: "R_kgDOG_Pt2A",
+    //   category: "Announcements",
+    //   categoryId: "DIC_kwDOG_Pt2M4COD69",
+    // },
+
+    searchPro: true,
 
     components: {
       components: ["Badge", "VPCard"],

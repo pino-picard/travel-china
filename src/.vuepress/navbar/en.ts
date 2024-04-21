@@ -3,28 +3,24 @@ import { navbar } from "vuepress-theme-hope";
 export const enNavbar = navbar([
   "/",
   "/demo/",
+  "/step-guide/",
   {
     text: "Guide",
     icon: "lightbulb",
-    prefix: "/guide/",
+    prefix: "/about-china/",
     children: [
       {
-        text: "Bar",
+        text: "Something about China",
         icon: "lightbulb",
-        prefix: "bar/",
-        children: ["baz", { text: "...", icon: "ellipsis", link: "#" }],
+        prefix: "culture/",
+        children: ["culture", { text: "test1", icon: "ellipsis", link: "#" }],
       },
       {
-        text: "Foo",
+        text: "Something about Chinese",
         icon: "lightbulb",
-        prefix: "foo/",
-        children: ["ray", { text: "...", icon: "ellipsis", link: "#" }],
+        prefix: "people/",
+        children: ["people", { text: "test2", icon: "ellipsis", link: "#" }],
       },
     ],
-  },
-  {
-    text: "V2 Docs",
-    icon: "book",
-    link: "https://theme-hope.vuejs.press/",
   },
 ]);

@@ -6,4 +6,4 @@ category:
   - Guide
 ---
 
-<Catalog />
+<Catalog base="/about-china/"/>
